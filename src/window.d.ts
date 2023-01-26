@@ -1,5 +1,5 @@
 interface Window {
-  loadApp: any;
+  loadApp: Root;
 }
 
 declare var window: Window;
