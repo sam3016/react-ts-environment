@@ -1,8 +1,13 @@
 import React from "react";
 
-function App(props:any) {
-  const data = props.props.data;
+type Props = {
+  props: {
+    data: string,
+  }
+};
 
+function App(props:Props) {
+  const data = props.props.data;
   const handleOnClick = () => {
     window.FileMaker.PerformScriptWithOption("Show Result", "You click a button", 5);
   };
